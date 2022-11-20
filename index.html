@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        body {
+            margin-top: 60px; 
+            display: flex;
+            justify-content: center;
+        }
+        button {
+            padding: 30px;
+            width: 200px;
+            font-weight: 800;
+            font-size: x-large;
+            margin: 20px;
+        }
+        @media screen and (max-width : 800px) {
+            body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="tambah">
+        <button>Tambah</button>
+    </div>
+
+    <div class="kali">
+        <button>Kali</button>
+    </div>
+
+    <div class="bagi">
+        <button>Bagi</button>
+    </div>
+
+    <div class="kurang">
+        <button>Kurang</button>
+    </div>
+
+
+
+
+    <script>
+        const kali1 = document.querySelector('.kali');
+        const tambah1 = document.querySelector('.tambah');
+        const bagi1 = document.querySelector('.bagi');
+        const kurang1 = document.querySelector('.kurang');
+
+
+
+
+    tambah1.addEventListener('click', () => {
+             const tambah = (a, b) => {
+        return a + b;
+    };
+        let a = parseInt( prompt('Masukan angka : '));
+        let b = parseInt( prompt('Ditambah : '));
+        alert(tambah(a,b));
+    });
+    
+    
+    kali1.addEventListener('click', () => {   
+        const kali = function(a, b){
+        return a * b;
+    };
+        let a = parseInt( prompt('Masukan angka : '));
+        let b = parseInt( prompt('Dikali : '));
+        alert(kali(a,b));
+    });
+
+
+    bagi1.addEventListener('click', () => {   
+        const bagi = function(a, b){
+        return a / b;
+    };
+        let a = parseInt( prompt('Masukan angka : '));
+        let b = parseInt( prompt('Dibagi : '));
+        alert(bagi(a,b));
+    });
+
+
+    kurang1.addEventListener('click', () => {   
+        const kurang = function(a, b){
+        return a - b;
+    };
+        let a = parseInt( prompt('Masukan angka : '));
+        let b = parseInt( prompt('Dikurangi : '));
+        alert(kurang(a,b));
+    });
+    
+
+
+
+    
+
+
+
+   
+         
+
+      
+
+
+
+
+
+        
+
+
+
+        // const tambah = (a, b) => {
+        //     let jml;
+
+        //     jml = a + b;
+
+        //     return jml;
+        // };
+
+        // alert('1 + 2' + ' = ' + tambah(1, 2));
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
